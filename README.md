@@ -1,7 +1,7 @@
 # FactionUI
 
 [![HitCount](http://hits.dwyl.io/BumbumKill/FactionUI.svg)](http://hits.dwyl.io/BumbumKill/FactionUI)
-[![Poggit-CI](https://poggit.pmmp.io/ci/BumbumKill/FactionUI/FactionUI)](https://poggit.pmmp.io/ci/BumbumKill/FactionUI/FactionUI)
+[![Poggit-CI](https://poggit.pmmp.io/ci.shield/BumbumKill/FactionUI/FactionUI)](https://poggit.pmmp.io/ci/BumbumKill/FactionUI/FactionUI)
 
  # Download
 | Version | zip | phar |
