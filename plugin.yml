@@ -1,8 +1,8 @@
 name: FactionsUI
 main: fu\Main
 api: 3.0.0
-version: 1.0.3
-author:  bumbumkill ##Don't change author!
+version: 1.0.0
+author: Bumbumkill
 description: "FactionsUI plugin for PMMP"
 
 permissions:
