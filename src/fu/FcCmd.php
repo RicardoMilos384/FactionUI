@@ -52,7 +52,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 	}
 				
     public function normalForm(Player $sender){
-	    $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+	        $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		$form = $api->createSimpleForm(function(Player $sender, ?int $data){
 			if(!isset($data)) return;
 			switch($data){
@@ -117,7 +117,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 				    $form->sendToPlayer($sender);
         }
     public function create(Player $sender){
-        	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+        	    $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f create $data[0]");
@@ -128,7 +128,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 	     }
 	
 	public function invite(Player $sender){
-        	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+        	    $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f invite $data[0]");
@@ -139,7 +139,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 	     }
 	
 	public function kick(Player $sender){
-        	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+        	    $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f kick $data[0]");
@@ -151,7 +151,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 	
 	public function donate(Player $sender){
 			$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
-		$f = $api->createSimpleForm(function(Player $sender, ?int $data){
+		        $f = $api->createSimpleForm(function(Player $sender, ?int $data){
 			if(!isset($data)) return;
 			switch($data){
                         case 0:
@@ -169,7 +169,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
      }
      
      public function slider(Player $sender){
-        	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+        	    $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f donate $data[0]");
@@ -182,7 +182,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 	     }
 	
 	public function input(Player $sender){
-        	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+        	    $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f donate $data[0]");
@@ -195,7 +195,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 	
 	
 	public function wd(Player $sender){
-        	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+        	    $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f withdraw $data[0]");
@@ -206,7 +206,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 	     }
 	
 	public function sethome(Player $sender){
-        	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+        	    $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f sethome $data[0]");
@@ -217,7 +217,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
    }
    
    public function prm(Player $sender){
-       	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+       	            $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f promote $data[0]");
@@ -239,7 +239,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
    }
    
    public function adminForm(Player $sender){
-				$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+		        $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		        $form = $api->createSimpleForm(function(Player $sender, ?int $data){
 			if(!isset($data)) return;
 			switch($data){
@@ -287,7 +287,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
    }
    
    public function amst(Player $sender){
-       	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+       	            $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f addstrto $data[0] $data[1]");
@@ -311,7 +311,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
    }
    
    public function adbl(Player $sender){
-       	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+       	            $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f forceunclaim $data[0]");
@@ -322,7 +322,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
    }
    
    public function fcdl(Player $sender){
-       	$api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
+              	    $api = $this->main->getServer()->getPluginManager()->getPlugin("FormAPI");
 		    $f = $api->createCustomForm(function(Player $sender, ?array $data){
 			if(!isset($data)) return;
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f forcedelete $data[0]");
