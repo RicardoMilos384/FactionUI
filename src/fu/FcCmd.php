@@ -36,7 +36,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 				$this->normalForm($sender);
 				return true;
 			}else{
-				$sender->sendMessage("§cYou don't have permission");
+				$sender->sendMessage("§eYou don't have permission");
 				return false;
 			}
 		}
