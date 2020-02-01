@@ -31,7 +31,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 			$sender->sendMessage("§cUse command in game!");
 			return false;
 		}
-		if(!isset($args[0]) || $args[0] !== "admin"){
+		if(!isset($args[0]) || $args[0] !== "adm"){
 			if($sender->hasPermission("factionui.cmd.use")){
 				$this->normalForm($sender);
 				return true;
@@ -40,7 +40,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 				return false;
 			}
 		}
-		if($args[0] === "admin"){
+		if($args[0] === "adm"){
 			if($sender->hasPermission("factionui.use.admin")){
 				$this->adminForm($sender);
 			}else{
@@ -56,8 +56,8 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 		$form = $api->createSimpleForm(function(Player $sender, ?int $data){
 			if(!isset($data)) return;
 			switch($data){
-						case 0:
-						   break;
+			case 0:
+			    break;
                         case 1:
                             $this->create($sender);
                             break;
