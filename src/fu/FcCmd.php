@@ -175,7 +175,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f donate $data[0]");
 	    });
 	    $economy = EconomyAPI::getInstance();
-          $moggh = $economy->myMoney($sender);
+          $mn = $economy->myMoney($sender);
 		$f->setTitle($this->setName() . "FactionsUI");
 		$f->addSlider("Amount", 1000, $mn);
 		$f->sendToPlayer($sender);
