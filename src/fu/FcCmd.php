@@ -28,10 +28,10 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 
     public function execute(CommandSender $sender, string $label, array $args){
 		if(!$sender instanceof Player){
-			$sender->sendMessage("§cUse command in game!");
+			$sender->sendMessage("§crun command in game!");
 			return false;
 		}
-		if(!isset($args[0]) || $args[0] !== "adm"){
+		if(!isset($args[0]) || $args[0] !== "admin"){
 			if($sender->hasPermission("factionui.cmd.use")){
 				$this->normalForm($sender);
 				return true;
@@ -40,7 +40,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 				return false;
 			}
 		}
-		if($args[0] === "adm"){
+		if($args[0] === "admin"){
 			if($sender->hasPermission("factionui.use.admin")){
 				$this->adminForm($sender);
 			}else{
@@ -175,7 +175,7 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
 			$this->main->getServer()->getCommandMap()->dispatch($sender, "f donate $data[0]");
 	    });
 	    $economy = EconomyAPI::getInstance();
-          $mn = $economy->myMoney($sender);
+          $moggh = $economy->myMoney($sender);
 		$f->setTitle($this->setName() . "FactionsUI");
 		$f->addSlider("Amount", 1000, $mn);
 		$f->sendToPlayer($sender);
@@ -265,9 +265,9 @@ class FcCmd extends Command implements PluginIdentifiableCommand{
      
                     $form->setTitle($this->setName() . "FactionsUI•");
 					$form->addButton($this->setName() . "Choose Actions•");
-					$form->addButton($this->setName() . "Remove Power•");
+					$form->addButton($this->setName() . "Reduce Power•");
 					$form->addButton($this->setName() . "Add Power•");
-					$form->addButton($this->setName() . "Remove Balance•");
+					$form->addButton($this->setName() . "Reduce Balance•");
 					$form->addButton($this->setName() . "Force Unclaim•");
 					$form->addButton($this->setName() . "Force Delete•");
                     $form->addButton($this->setName() . "Cancel•"); 
